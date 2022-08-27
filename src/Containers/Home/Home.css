@@ -1,0 +1,488 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+
+
+.box-slider {
+    height: 100%;
+}
+
+
+/* .box-slider .carousel-control-prev {
+    border-radius: 2px;
+    background: #ffff00;
+    position: absolute;
+    left: 0px;
+    font-size: 38px;
+    top: 40%;
+    width: 60px;
+    height: 60px;
+    line-height: 20px;
+    opacity: 1;
+}
+
+.box-slider .carousel-control-next {
+    border-radius: 2px;
+    background: #ffff00;
+    position: absolute;
+    right: 0px;
+    font-size: 38px;
+    top: 40%;
+    width: 60px;
+    height: 60px;
+    line-height: 20px;
+    opacity: 1;
+} */
+
+.first-section .big-tagline a {
+    background: none;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+
+
+.big-tagline a,
+.big-tagline a.hover-btn-new::after {
+
+    transition: all 0.3s;
+}
+
+.big-tagline a.hover-btn-new::before,
+.big-tagline a.hover-btn-new::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+
+.big-tagline a.hover-btn-new:hover span {
+    color: #000000;
+}
+
+.hover-btn-new::before {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.hover-btn-new::after {
+    background: #fdee00 !important;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.hover-btn-new span {
+    position: relative;
+    z-index: 2;
+}
+
+.hover-btn-new:hover:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+}
+
+
+.first-section .big-tagline a:hover {
+    color: #333333;
+}
+
+.box-slider .carousel-inner {
+    height: 100%;
+}
+
+.box-slider .carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/*------------------------------------------------------------------
+    SECTIONS
+-------------------------------------------------------------------*/
+
+.dbcolor {
+    background: #fdee00;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+    width: 100%;
+}
+
+.parallax.parallax-off {
+    background-attachment: fixed !important;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-position: center center;
+    vertical-align: sub;
+    width: 100%;
+    z-index: 2;
+}
+
+.no-scroll-xy {
+    overflow: hidden !important;
+    transition: all .4s ease-in-out;
+}
+
+.section {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0;
+}
+
+.noover {
+    overflow: visible;
+}
+
+.noover .btn-dark {
+    border: 0 !important;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.nopadtop {
+    padding-top: 0;
+}
+
+.section.wb {
+    background-color: #ffffff;
+}
+
+.section.lb {
+    background-color: #f2f3f5;
+}
+
+.section.db {
+    background-color: #1f1f1f;
+}
+
+.section.color1 {
+    background-color: #448AFF;
+}
+
+.section.cl {
+    background-color: #2d3032;
+}
+
+.hover-btn-new {
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 46px;
+    padding: 0 17px;
+    text-transform: uppercase;
+    position: relative;
+    /* border: 2px solid #fff; */
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+.orange {
+    border-color: #fdee00;
+}
+
+.first-section {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.first-section::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.first-section h2 {
+    color: #ffffff;
+    font-size: 68px;
+    font-weight: 300;
+    text-transform: capitalize;
+    display: block;
+    margin: 0;
+    padding: 0 0 30px;
+    position: relative;
+}
+
+.first-section h2 strong {
+    color: #fdee00;
+}
+
+.first-section .lead {
+    font-size: 21px;
+    font-weight: 300;
+    padding: 0 0 40px;
+    margin: 0;
+    line-height: inherit;
+    color: #ffffff;
+}
+
+.macbookright {
+    width: 980px;
+    position: absolute;
+    right: -15%;
+    bottom: -6%;
+}
+
+.section-title {
+    display: block;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    color: #999;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    margin: 0;
+}
+
+.section-title h3 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 62px;
+    margin: 0 0 25px;
+    padding: 0;
+    text-transform: none;
+}
+
+.section.colorsection p,
+.section.colorsection h3,
+.section.db h3 {
+    color: #ffffff;
+}
+
+
+.box-slider .first-section {
+    display: table;
+    position: relative;
+    width: 100%;
+}
+
+.dtab {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.page-section {
+    padding: 70px 0px;
+}
+
+.customwidget a {
+    position: relative;
+    padding: 13px 40px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+
+.customwidget a,
+.customwidget a.hover-btn-new::after {
+
+    transition: all 0.3s;
+}
+
+.customwidget a.hover-btn-new::before,
+.customwidget a.hover-btn-new::after {
+    background: #9dc15b;
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+
+.customwidget a.hover-btn-new:hover span {
+    color: #333333;
+}
+
+.customwidget a.hover-btn-new::before {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.customwidget a.hover-btn-new::after {
+    background: #333333 !important;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.customwidget a.hover-btn-new span {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+
+}
+
+.customwidget a.hover-btn-new:hover:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+}
+
+.message-box a {
+    position: relative;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.message-box a,
+.message-box a.hover-btn-new::after {
+
+    transition: all 0.3s;
+}
+
+.message-box a.hover-btn-new::before,
+.message-box a.hover-btn-new::after {
+    background: #ffff00;
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+
+.message-box a.hover-btn-new:hover span {
+    color: #333333;
+}
+
+.message-box a.hover-btn-new::before {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.message-box a.hover-btn-new::after {
+    background: #333333 !important;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.message-box a.hover-btn-new span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.message-box a.hover-btn-new:hover:after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+}
+
+
+.customwidget {
+    margin-top: 30px;
+}
+
+.hmv-box {
+    padding: 60px 0px;
+}
+
+.inner-hmv {
+    padding: 15px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .1);
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-box-hmv {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 3px solid #4babb1;
+    border-radius: 6px;
+    margin-bottom: 20px;
+
+    transition: all 0.3s;
+}
+
+.icon-box-hmv i {
+    font-size: 60px;
+    color: #ffff00;
+}
+
+.inner-hmv h3 {
+    font-size: 28px;
+    color: #212121;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 0px;
+    transition: all 0.3s;
+}
+
+.inner-hmv p {
+    margin: 0px;
+}
+
+.inner-hmv:hover .icon-box-hmv {
+    border: 3px solid #ffff00;
+}
+
+.inner-hmv:hover .icon-box-hmv i {
+    color: #4babb1;
+}
+
+.inner-hmv:hover h3 {
+    color: #ffff00;
+}
+
+.tr-pa {
+    font-size: 170px;
+    color: #fbfbfb;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    line-height: 125px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.inner-hmv:hover .tr-pa {
+    opacity: 1;
+
+    transition: all 0.3s;
+}

@@ -1,0 +1,11 @@
+.item {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+
+}
+
+.item:hover {
+
+    transform: scale(1.3),
+
+}
